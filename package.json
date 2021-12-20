@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "elm-format src/ --yes",
     "start": "nodemon -w src/ -e elm --exec 'elm make src/Main.elm --debug --output elm.js'",
-    "build": "mkdir dist && cp index.html dist/ && elm make --optimize src/Main.elm --output dist/elm.js"
+    "build": "rm -rf dist/ && mkdir dist && cp index.html dist/ && elm make --optimize src/Main.elm --output dist/elm.js"
   },
   "author": "",
   "license": "ISC",
